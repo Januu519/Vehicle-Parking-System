@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AddVehiclePopUp" prefHeight="400.0" prefWidth="656.0" style="-fx-background-color: #d2dae2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="30.0" prefWidth="656.0" style="-fx-background-color: #1abc9c;" text="Add Vehicle">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <Text layoutX="53.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Number" />
+      <Text layoutX="43.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Weight" />
+      <Text layoutX="44.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of Passengers" />
+      <TextField fx:id="txtVehicleNo" layoutX="183.0" layoutY="115.0" prefHeight="21.0" prefWidth="187.0" style="-fx-background-color: #a4b0be;" />
+      <TextField fx:id="txtNoPassenger" layoutX="183.0" layoutY="193.0" prefHeight="21.0" prefWidth="187.0" style="-fx-background-color: #a4b0be;" />
+      <TextField fx:id="txtMaxWeight" layoutX="183.0" layoutY="154.0" prefHeight="21.0" prefWidth="187.0" style="-fx-background-color: #a4b0be;" />
+      <Text layoutX="384.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Type" />
+      <ComboBox fx:id="cmbAddVehicleType" layoutX="480.0" layoutY="115.0" prefWidth="150.0" style="-fx-background-color: #a4b0be;" />
+      <Button layoutX="503.0" layoutY="307.0" mnemonicParsing="false" onAction="#AddVehicleOnAction" style="-fx-background-color: #54a0ff;" text="Add Vehicle" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="128.0" layoutY="307.0" mnemonicParsing="false" onAction="#CancelAddVehicle" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: #54a0ff;" text="Back" textFill="#ebe4e4">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

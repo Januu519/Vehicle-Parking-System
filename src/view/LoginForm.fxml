@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginPopUp" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #1abc9c;" text="Login">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Label>
+      <Text layoutX="57.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUserName" layoutX="189.0" layoutY="185.0" prefHeight="31.0" prefWidth="314.0" />
+      <Button fx:id="canselbtn" layoutX="189.0" layoutY="317.0" mnemonicParsing="false" onAction="#btncanselOnAction" prefHeight="31.0" prefWidth="88.0" text="Cancle" />
+      <Button fx:id="Loginbtn" layoutX="415.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnLoginManageOnAction" prefHeight="31.0" prefWidth="88.0" text="Log in" />
+      <PasswordField fx:id="password" layoutX="189.0" layoutY="239.0" prefHeight="31.0" prefWidth="314.0" />
+   </children>
+</AnchorPane>
